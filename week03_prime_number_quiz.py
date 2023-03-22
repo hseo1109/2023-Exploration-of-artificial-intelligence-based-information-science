@@ -8,3 +8,4 @@ for i in range(start_number, end_number+1):
     if is_prime and i!=1:
         print(f"{i} ")
     is_prime=True
+
