@@ -1,6 +1,20 @@
-fahrenheit=float(input('화씨 온도 입력: '))
-celsius=(fahrenheit-32.0)*(5.0/9.0)
-#print("화씨 %.2lf도는 섭씨 %.2lf도 입니다." %(fahrenheit,celsius))
-#print(f"화씨 {fahrenheit:.2f}도는 섭씨 {celsius:.2f}도 입니다.")
-#print("화씨 ",round(fahrenheit,2),"도는 섭씨 ",round(celsius,2),"도 입니다.")
-print("화씨 {0:.2f}도는 섭씨 {1:.2f}도 입니다." .format(fahrenheit,celsius))
+while True:
+    menu=int(input("1) fahrenheit to celsius   2) celcius to fahrenheit   3)exit :"))
+
+    if menu==1:
+        fahrenheit=float(input('Enter temperature in Fahrenheit : '))
+        celsius=(fahrenheit-32.0)*(5.0/9.0)
+        print(f"{fahrenheit:.2f} degrees Fahrenheit is {celsius:.2f} degrees Celsius.")
+    elif menu==2:
+        fahrenheit = float(input('Enter temperature in Celcius : '))
+        fahrenheit=(celsius*9.0/5.0)+32.0
+        print(f"{fahrenheit:.2f} degrees Celsius is {celsius:.2f} degrees Fahrenheit")
+    elif menu==3:
+        break
+    else:
+        print("Please choose from the given menu.")
+
+print("Program finished!")
+        #exit(1)
+
+# (0°C × 9/5) + 32 = 32°F
