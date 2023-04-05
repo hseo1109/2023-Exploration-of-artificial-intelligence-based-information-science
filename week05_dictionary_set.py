@@ -1,0 +1,14 @@
+#week05_dictionary_set
+subjects_list=[
+    ['김영숙','국어'],
+    ['남동호','수학'],
+    ['김성훈','수학'],
+    ['양수진','영어'],
+    ['이지현','정보'],
+    ['김병수','물리']
+]
+subjects_dict=dict(subjects_list)
+print(subjects_dict)
+print(subjects_dict.get('트럼프'))
+print(subjects_dict.get('양수진'))
+print(subjects_dict.get('자스민'))
