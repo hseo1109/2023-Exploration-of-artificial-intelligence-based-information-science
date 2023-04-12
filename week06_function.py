@@ -1,5 +1,5 @@
 # week06_function.py
-#before decorator
+#after decorator
 import time
 
 #decorator
