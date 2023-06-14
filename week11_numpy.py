@@ -1,14 +1,15 @@
 import numpy as np
-mid=[10,20,30]
-final=[90,70,80]
-mid_scores=np.array(mid)
-final_scores=np.array(final)
-print(type(mid),type(mid_scores))
-
-total=list()
-avg=[]
-for i in range(len(mid)):
-    total.append(mid[i]+final[i])
-    avg.append(total[i]/2)
-print(f"Total : {total}")
-print(f"Average : {avg}")
+weights=[86,74,59,95,81,68]
+heights=[1.83,1.76,1.59,1.86,1.77,1.73]
+bmi=[]
+for i in range(6):
+    bmi.append(weights[i]/(heights[i]*heights[i]))
+    if bmi[i]<18.5:
+        bmi[i]="저체중"
+    elif 18.6<+bmi[i]<=22.9:
+        bmi[i]="정상"
+    elif 23.0<=bmi[i]<=24.9:
+        bmi[i]="과체중"
+    else:
+        bmi[i]="비만"
+print(f"{bmi}")
